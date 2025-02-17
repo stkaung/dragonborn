@@ -1,0 +1,163 @@
+.tree {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.tree-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  width: 270px;
+  padding: 15px;
+}
+
+@media() {
+  .tree-row {
+    flex: 1 1 calc(70% - 30px); /* Exactly 2 columns on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .tree-row {
+    flex: 1 1 100%; /* Stack into a single column on extra small screens */
+  }
+}
+
+h3 {
+  font-size: 20px;
+}
+
+span {
+  font-size: 14px;
+}
+
+.info-card-emperor {
+  border-color: #e3d9fc;
+}
+
+h3 {
+  margin: 0;
+}
+
+hr {
+  border: 3px solid;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.hr-emperor {
+  border-color: #e3d9fc;
+}
+
+.info-card-image {
+  width: 50px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.image-emperor {
+  border-color: #ffa468;
+}
+
+.info-card-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-card-content > span {
+  font-weight: bold;
+}
+
+.name-emperor {
+  color: #e3d9fc;
+}
+
+.image-community,
+.hr-community {
+  border-color: #ec6c1b;
+}
+
+.image-community > img {
+  height: 35px;
+}
+
+.name-community {
+  color: #ec6c1b;
+}
+
+.image-royal-guard,
+.hr-royal-guard {
+  border-color: #706e6e;
+}
+
+.name-royal-guard {
+  color: #706e6e;
+}
+
+.image-admissions,
+.hr-admissions {
+  border-color: #405a35;
+}
+
+.name-admissions {
+  color: #405a35;
+}
+
+.image-harbingers,
+.hr-harbingers {
+  border-color: #03898c;
+}
+
+.name-harbingers {
+  color: #03898c;
+}
+
+.image-pyro-foundry,
+.hr-pyro-foundry {
+  border-color: #584334;
+}
+
+.name-pyro-foundry {
+  color: #584334;
+}
+
+.image-wyverns,
+.hr-wyverns {
+  border-color: #03898c;
+}
+
+.name-wyverns {
+  color: #03898c;
+}
+
+.image-justice,
+.hr-justice {
+  border-color: #a0a0a0;
+}
+
+.name-justice {
+  color: #a0a0a0;
+}
+
+.image-warfare,
+.hr-warfare {
+  border-color: #931717;
+}
+
+.name-warfare {
+  color: #931717;
+}

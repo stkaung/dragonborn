@@ -1,0 +1,14 @@
+newmtl Empress1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Empress1_diff.png
+map_Kd Empress1_diff.png
+map_d Empress1_diff.png
+

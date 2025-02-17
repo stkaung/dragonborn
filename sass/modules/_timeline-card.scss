@@ -1,0 +1,22 @@
+.timeline-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid $border-color;
+  background-color: $gray-900;
+  gap: 30px;
+
+  .icon {
+    padding: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: initial;
+    color: $primary-color;
+    background-color: #ffffff0a;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: initial;
+    color: $white;
+  }
+}

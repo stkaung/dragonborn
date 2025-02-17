@@ -1,0 +1,32 @@
+.te-list-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    @include sm {
+      gap: 10px;
+    } 
+    .te-list-item {
+       display: flex;
+       gap: 15px;
+       flex-wrap: nowrap;
+       align-items: center;
+       
+      .icon {
+        font-size: 15px;
+        color: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 50%;
+      }
+      .text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: initial;
+        margin-bottom: 0;
+        color: $text-color;
+      }
+    }
+  }

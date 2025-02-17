@@ -1,0 +1,31 @@
+// Contact Map Area
+.contact-map-area {
+    position: relative;
+
+    .te-map-widget {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 70%;
+
+        iframe {
+            height: 100%;
+        }
+    }
+}
+// Map Widget
+.te-map-widget {
+    iframe {
+      width: 100%;
+      height: 650px;
+      margin-bottom: -12px;
+    
+      @include sm {
+        height: 350px;
+      }
+      @include md {
+        height: 450px;
+      }
+    }
+  }

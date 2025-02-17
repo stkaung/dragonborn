@@ -1,0 +1,118 @@
+.te-section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 60px;
+  gap: 24px;
+
+  
+  @include sm {
+    flex-direction: column;
+    gap: 24px;
+    align-items: unset;
+    margin-bottom: 40px;
+  }
+
+  @include md {
+    flex-direction: column;
+    gap: 24px;
+    align-items: unset;
+    margin-bottom: 50px;
+  }
+
+  &.left-align-title {
+    .te-section-content,
+    .te-section-desc {
+     width: 50%;
+
+     @include rmaxwd(991) {
+      width: 100%;
+     }
+    }
+    .te-section-desc {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+  }
+  .te-section-content {
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+  }
+  .short-title-wrapper {
+    line-height: initial;
+  }
+  .short-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1.2px;
+    color: $blue-color;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 10px;
+    flex-shrink: 0;
+
+  }
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55.65px;
+    margin-bottom: 0;
+    color: $white;
+
+    @include lg {
+      font-size: 48px;
+      line-height: 62px;
+    }
+    @include lg {
+      font-size: 47px;
+    }
+    @include md {
+      font-size: 38px;
+      line-height: 48px;
+    }
+    @include sm {
+      font-size: 32px;
+      line-height: 42px;
+    }
+    @media only screen and (min-width: 0px) and (max-width: 439px){
+      br {
+        display: none;
+      }
+    }
+    span {
+      color: $blue-color;
+    }
+  }
+  .te-section-desc {
+    margin-bottom: 0;
+
+    p {
+      margin-bottom: 0;
+
+      br {
+        @include sm {
+          display: none;
+        }
+      }
+    }
+    .te-theme-btn {
+      background-color: transparent;
+      color: $black;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $white;
+        @include transition;
+      }
+    }
+  }
+}

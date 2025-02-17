@@ -1,0 +1,160 @@
+.portfolio-slider-area {
+  &.style-1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 420px;
+    overflow: hidden;
+  }
+
+}
+.video-slider-area {
+  overflow: hidden;
+}
+.testimonial-slider-area {
+  &.style-1 {
+    margin-top: -310px;
+  }
+}
+
+.video-card {
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(28.64% 71.1% at 50% 50%, rgba(14, 11, 13, 0.00) 0%, rgba(13, 11, 14, 0.40) 100%);
+  }
+
+  .video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 93px;
+    height: 93px;
+    background-color: $white;
+    border-radius: 50px;
+    color: $primary-color;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+// Why Choose Us Area
+.why-choose-area {
+  position: relative;
+  z-index: 2;
+
+  .why-choose-bg-area {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: $primary-color;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+}
+.why-choose-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px 10px;
+
+  .divider-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+.why-choose-info-title {
+  padding: 80px;
+  background-color: #1B1B1B;
+  margin-left: 40px;
+
+
+  @include sm {
+    margin-left: 0;
+    padding: 40px;
+  }
+
+  .te-section-title {
+    margin-bottom: 40px;
+  }
+}
+
+// Appointment
+.appointment-area {
+  &.style-1 {
+    .te-section-title {
+      margin-bottom: 50px;
+    }
+  }
+}
+// About Image Card
+.about-image-card {
+  padding-top: 170px;
+  padding-left: 140px;
+  position: relative;
+
+  .image-one {
+    width: 270px;
+    height: 320px;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+  .image-two {
+    width: 410px;
+    height: 480px;
+    border-left: 14px solid $primary-color;
+    position: relative;
+
+    @include sm {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+    .shape-image {
+      position: absolute;
+      top: -122px;
+      right: 30px;
+      z-index: -1;
+    }
+    .image-three {
+      position: absolute;
+      left: -190px;
+      bottom: 0;
+      z-index: 9;
+    }
+  }
+
+}

@@ -1,0 +1,333 @@
+/*Comment Input Filed*/
+.te-post-comments-title {
+  .sub-title {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: $heading-font;
+    color: $orange-color;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 28px;
+    font-weight: 700;
+    color: $secondary-color;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @include sm {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    small {
+      font-size: 18px;
+      font-family: $body-font;
+      color: $primary-color;
+    }
+  }
+}
+.comment-respond {
+  position: relative;
+  width: 100%;
+  //padding: 40px;
+  //background-color: $gray-700;
+  
+  p {
+    margin: 0;
+
+    &.logged-in-as {
+      margin-bottom: 30px;
+    }
+  }
+
+  .te-contacts-email,
+  .te-contacts-name,
+  .single-input-field {
+    margin-bottom: 30px;
+  }
+  label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: $white;
+    margin-bottom: 30px;
+  }
+  .checkbox-field-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 15px 0;
+    p {
+      margin: 0;
+    }
+
+    .single-checkbox-field {
+      margin-bottom: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: $body-font;
+
+    }
+  }
+  .comment-form-cookies-consent {
+    display: none;
+  }
+  input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  input,
+  select {
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    color: $white;
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+    font-family: $body-font !important;
+    border: solid 1px $border-color;
+  }
+  *::-webkit-input-placeholder {
+    color: $white;
+  }
+  *:-moz-placeholder {
+    color: $white;
+    opacity: 1;
+  }
+  *::-moz-placeholder {
+    color: $white;
+    opacity: 1;
+  }
+  *:-ms-input-placeholder {
+    color: $white;
+  }
+  *::-ms-input-placeholder {
+    color: $white;
+  }
+  *::placeholder {
+    color: $white;
+  }
+
+
+  textarea {
+    resize: vertical;
+    padding: 20px;
+    width: 100%;
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+    font-family: $body-font !important;
+    height: 190px;
+    margin-bottom: 30px;
+    border: solid 1px $border-color;
+  }
+  input:focus,
+  textarea:focus,
+  .form-select:focus{
+    outline: none !important;
+    box-shadow: none;
+    border-color: $primary-color !important;
+    transition: all 0.4s ease 0s;
+  }
+}
+
+.te-post-comments-form {
+  &.style-2 {
+    .comment-respond {
+      padding: 0;
+      background-color: transparent;
+
+      textarea {
+        height: 130px;
+      }
+      .te-theme-btn {
+        width: 100%;
+      }
+    }
+  }
+
+  &.style-3 {
+    display: flex;
+
+    @include sm {
+      flex-direction: column;
+    }
+    .comment-respond {
+      background-color: #1A1A1A;
+      padding: 40px;
+      width: 100%;
+
+      @include sm {
+        padding: 40px 20px;
+      }
+    }
+    .te-section-title {
+      margin-bottom: 40px;
+    }
+    .te-theme-btn {
+      width: 100%;
+    }
+
+    .form-image {
+      width: 550px;
+      align-self: stretch;
+      position: relative;
+      flex-shrink: 0;
+
+      @include sm {
+        height: 350px;
+        width: 100%;
+      }
+      @include md {
+        width: 350px;
+      }
+      @include lg {
+        width: 350px;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &.style-4 {
+    display: flex;
+    gap: 55px;
+
+    .comment-respond {
+      background-color: $gray-700;
+      padding: 40px 70px;
+
+      .give-form-wrap {
+        .give-currency-position-before {
+          position: absolute;
+          right: 40px;
+        }
+        .give-custom-amount-text {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px;
+          position: relative;
+          top: -10px;
+        }
+        label {
+          margin-bottom: 10px !important;
+        }
+        fieldset legend {
+          color: $white;
+          margin-bottom: 20px;
+        }
+        .form-row-first {
+          width: 48%;
+          float: left;
+        }
+        .form-row-last {
+          width: 48%;
+          float: right;
+        }
+        .form-row-wide {
+          float: left;
+          width: 100%;
+        }
+        .give-label {
+          display: none;
+        }
+        .give-btn {
+          display: inline-flex;
+          padding: 16px 32px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: 1.4px;
+          color: $white;
+          background-color: $primary-color;
+          border: 1px solid $primary-color;
+          position: relative;
+          z-index: 1;
+          @include transition;
+          overflow: hidden;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $gray-900;
+            background-color: $white;
+            border-color: $white;
+          }
+        }
+        input {
+          margin-bottom: 20px;
+        }
+        .give-submit-button-wrap {
+          margin-top: 10px;
+        }
+        .give-donation-levels-wrap {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: inline-flex;
+          gap: 10px;
+          margin-bottom: 20px;
+
+          .give-donation-level-btn {
+            padding: 10px 20px;
+            background-color: transparent;
+            border-color: $border-color;
+            font-weight: 600;
+
+            &:hover {
+              background-color: $white;
+            }
+
+            &.give-default-level {
+              background-color: $primary-color;
+              border-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+    .te-section-title {
+      margin-bottom: 40px;
+    }
+    .te-theme-btn {
+      width: 100%;
+    }
+    .form-image {
+      width: 465px;
+      align-self: stretch;
+      position: relative;
+      flex-shrink: 0;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+
+}
